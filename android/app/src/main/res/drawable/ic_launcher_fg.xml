@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- KMagine AI logo: white "KA" letters, centred inside the adaptive-icon safe zone -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp" android:height="108dp"
+    android:viewportWidth="108" android:viewportHeight="108">
+    <path android:fillColor="#FFFFFF" android:pathData="M26,38h7v32h-7z" />
+    <path android:fillColor="#FFFFFF" android:pathData="M33,48.5L42.5,38L52,38L39.5,54L52,70L42.5,70L33,59.5Z" />
+    <path android:fillColor="#FFFFFF" android:pathData="M64,38L72,38L82,70L74,70L68,47L62,70L54,70Z" />
+    <path android:fillColor="#FFFFFF" android:pathData="M59,58h18v5h-18z" />
+</vector>

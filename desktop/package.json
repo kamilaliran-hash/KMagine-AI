@@ -1,0 +1,43 @@
+{
+  "name": "kmagine-ai",
+  "productName": "KMagine AI",
+  "version": "1.0.0",
+  "description": "Text-to-image and photo-to-image AI app",
+  "main": "main.js",
+  "author": "KMagine AI",
+  "license": "UNLICENSED",
+  "scripts": {
+    "prepare-web": "node scripts/copy-web.js",
+    "start": "npm run prepare-web && electron .",
+    "dist": "npm run prepare-web && electron-builder --win portable nsis --x64 --publish never"
+  },
+  "devDependencies": {
+    "electron": "^33.2.0",
+    "electron-builder": "^25.1.8"
+  },
+  "build": {
+    "appId": "com.kmagine.desktop",
+    "productName": "KMagine AI",
+    "files": [
+      "main.js",
+      "preload.js",
+      "web/**/*"
+    ],
+    "directories": {
+      "output": "dist",
+      "buildResources": "build"
+    },
+    "win": {
+      "artifactName": "KMagineAI-${version}-${arch}-${target}.${ext}",
+      "icon": "build/icon.png"
+    },
+    "portable": {
+      "artifactName": "KMagineAI-Portable.exe"
+    },
+    "nsis": {
+      "artifactName": "KMagineAI-Setup.exe",
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true
+    }
+  }
+}
